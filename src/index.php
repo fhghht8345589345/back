@@ -72,4 +72,5 @@ foreach ($KP as $item) {
 
 $TO=["lorem","impus","notcoin","altcoin","fpibank","bitcoin","xamstrcoin","meloncoin","bybit"];
 echo $TO[2] . " " . $TO[7] . " " . $TO[8];
+
 ?>
