@@ -17,8 +17,13 @@ $options = [
 $pdo = new PDO($dsn, $username, $password, $options);
 
 
-$stmt=$pdo->prepare ("SELECT * FROM users");
+$stmt=$pdo->prepare ("SELECT * FROM `narrko shops`");
 $stmt->execute();
 $data=$stmt->fetchAll();
-var_dump($data);
+print_r($data);
+{
+    echo '<pre>';
+    print_r($data);
+    echo '</pre>';
+}
 ?>
