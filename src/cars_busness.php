@@ -30,3 +30,6 @@ var_dump($data);
 
 $stmt2=$pdo->prepare("delete from `cars_business` where id=?");
 $stmt2->execute([13]);
+
+$stmt=$pdo->prepare("UPDATE `cars_business` SET name=?,price=? where id=?");
+$stmt->execute(["a7",2500000,5]);
