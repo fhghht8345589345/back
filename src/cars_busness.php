@@ -21,7 +21,7 @@ $stmt=$pdo->prepare ("SELECT*FROM `cars_business`");
 $stmt->execute();
 $data=$stmt->fetchAll();
 var_dump($data);
-
+$
 {
     echo '<pre>';
     var_dump($data);

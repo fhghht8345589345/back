@@ -28,7 +28,6 @@ echo '</table>';*/
 include "config.php";
 
 $ors=$pdo->query("SELECT * FROM `ogororodshop`");
-
 ?><table>
      <tr>
     <th>название</th>
@@ -44,6 +43,16 @@ foreach ($data as $row) {
     <td><?php echo $row["kyltura"] ?></td>
     <td><?php echo $row["price"] ?></td>
     <td><?php echo $row["opisanie"] ?></td>
+    <td>
+      <form action="delete.php">
+        <input type="hidden" name="d" value="<?php echo $row["id"];?>">
+        <input type="submit" value="delete">
+      </form>
+    </td>
+
+    <td>
+      <a href="update.php/?id=<?php echo $row ["id"] ?>">upadate</a>
+    </td>
   </tr>
 
 <?php
@@ -54,7 +63,7 @@ foreach ($data as $row) {
 table {
 width: 300px;
 heght:300px;
-background:red;
+background:#808080;
 position:absolute;
 left:700px;
 top:400px;
@@ -63,11 +72,9 @@ top:400px;
 }
 
 
-
-
-
-
 </style>
 <body>
+  <a href="add.php">add repository</a>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/do-slobody-doedu-17186/embed/" frameborder="0" scrolling="no"></iframe>
     <iframe width="110" height="200" src="https://www.myinstants.com/instant/knopka-iz-igry-2-47951/embed/" frameborder="0" scrolling="no"></iframe>
 </body>
