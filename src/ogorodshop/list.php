@@ -61,20 +61,49 @@ foreach ($data as $row) {
 
 <style>
 table {
-width: 300px;
-heght:300px;
-background:#808080;
+width: 800px;
+heght:50px;
+background:#87CEEB ;
 position:absolute;
-left:700px;
-top:400px;
+left:30px;
+top:20px;
+border-radius:2%;
+transition: all .3s linear;
+}
 
+td{
+border-right:2px solid grey;
+padding:10px 60px 10px 40px ;
 
 }
 
+.bat{
+
+  width: 100px;
+  height: 40px;
+  position:absolute;
+  background:#87CEFA;
+  top: 45%;
+  left:2%;
+  padding:5px 0;
+ line-height:40px;
+  text-align:center;
+  border-radius:10%;
+  text-decoration:none;
+  transition: all .3s linear;
+}
+.bat:hover {
+  color:white;
+  background-color:#4169E1;
+}
+
+table:hover {
+  color:#2F4F4F;
+  background-color:#FFA07A;
+}
 
 </style>
 <body>
-  <a href="add.php">add repository</a>
-  <iframe width="110" height="200" src="https://www.myinstants.com/instant/do-slobody-doedu-17186/embed/" frameborder="0" scrolling="no"></iframe>
-    <iframe width="110" height="200" src="https://www.myinstants.com/instant/knopka-iz-igry-2-47951/embed/" frameborder="0" scrolling="no"></iframe>
+  <a href="add.php" class="bat">add repository</a>
+  
 </body>
