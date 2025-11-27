@@ -61,9 +61,9 @@ foreach ($data as $row) {
 
 <style>
 table {
-width: 800px;
-heght:50px;
-background:#87CEEB ;
+width: 50%;
+heght:60%;
+background:#F0E68C ;
 position:absolute;
 left:30px;
 top:20px;
@@ -82,8 +82,8 @@ padding:10px 60px 10px 40px ;
   width: 100px;
   height: 40px;
   position:absolute;
-  background:#87CEFA;
-  top: 45%;
+  background:#F0E68C;
+  top: 50%;
   left:2%;
   padding:5px 0;
  line-height:40px;
@@ -93,13 +93,13 @@ padding:10px 60px 10px 40px ;
   transition: all .3s linear;
 }
 .bat:hover {
-  color:white;
-  background-color:#4169E1;
+  color:#BDB76B;
+  background-color:#FFE4B5;
 }
 
 table:hover {
-  color:#2F4F4F;
-  background-color:#FFA07A;
+  color:#BDB76B;
+  background-color:#FFE4B5;
 }
 
 </style>
